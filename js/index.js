@@ -34,7 +34,7 @@ carousel.children[1].addEventListener('click', function () {
     location.href = './PROJECTS/Simple Calculator/index.html'
 })
 carousel.children[2].addEventListener('click', function () {
-    location.href = './PROJECTS/INSIGHT STUDIO/index.html'
+    location.href = '#home'
 })
 carousel.children[3].addEventListener('click', function () {
     location.href = '#home'
