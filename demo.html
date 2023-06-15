@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol id ="elem">
+        <li>hello</li>
+        <li>world</li>
+    </ol>
+    <!-- <div>
+    <h1>dffffff</h1>
+    <h3>ghgkhjgkhjkg</h3>
+    <h5>ghgkhjgkhjkg</h5>
+    <p>ghgkhjgkhjkg</p>
+    </div> -->
+    <script>
+        const elem = document.querySelector('#elem');
+        for(i=0; i < 2; i++){
+            elem.removeChild(elem.children[0])
+        }
+    </script>
+</body>
+</html>
