@@ -1,0 +1,31 @@
+#error{
+    height: 85vh;
+    position: relative;
+    top: 8rem;
+}
+#error img{
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: 50rem;
+    width: 100%;
+}
+#error .data{
+    position:absolute;
+    text-align: center;
+    left: 0rem;
+    right: 0rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width:400px){
+    #error .data{
+        font-size: 3rem;
+        left:5rem;
+        right:5rem;
+    }
+    #error img{
+        height: 30rem;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome To Renu's Portfolio</title>
+    {{>headLinks}}
+ <head>
+
+<body>
+    <header>
+        <!--NAVIGATION BAR-->
+        {{>header}}
+        <!-- HOME SECTION -->
+        <div id="home">
+            <div class="bg-renu"> <img src="./assets/images/renu.jpg"></div>
+
+            <div class="article">
+                <h1 class="h1">Renu Bakshi - <b>The programming girl</b></h1>
+                <h2 class="h2">Hello, I am a creative web developer</h2>
+                <p class="p"> Web Developer || Pseudo fullstack Developer || Article Writer</p>
+                <a href="#about"><button class="btn">about me</button> </a>
+                <a href="./assets/docs/RENU BAKSHI.pdf" download><button class="btn">download <i class="fa fa-download"
+                            aria-hidden="true"></i></button> </a>
+                <a href="/contact"> <button class="btn">hire me</button> </a>
+            </div>
+
+        </div>
+    </header>
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- SERVICE SECTION -->
+        <section id="services">
+            <div>
+                <h2 class="h2">Have a Look at my Services</h2>
+            </div>
+            <div class="services-container">
+                <div class="services-items">
+                    <img src="./assets/images/download.jpg" alt="img">
+                    <h3 class="h3" class="h3">Development</h3>
+                    <p class="p"> Deadline oriented software engineer with dedication. Committed to provide solution
+                        that exceed client expectation.</p>
+                </div>
+                <div class="services-items">
+                    <img src="./assets/images/download.jpg" alt="img">
+                    <h3 class="h3" class="h3" class="h3">SEO &amp; marketing</h3>
+                    <p class="p">Specialized content writer and passionated about writting technology related
+                        contents.
+                        Able to Optimize Search Engine with Forum
+                        posting, Link Building, SEO related Article
+                        writing, keyword Research.</p>
+                </div>
+                <div class="services-items">
+                    <img src="./assets/images/download.jpg" alt="img">
+                    <h3 class="h3" class="h3" class="h3"> creative Web design</h3>
+                    <p class="p"> Good command on creating a responsive and dynamic sites. Able to implement Web based
+                        project using HTML, CSS &amp; JAVASCRIPT.</p>
+                </div>
+            </div>
+        </section>
+        <!--PROJECTS SECTION-->
+        <section id="projects">
+            <h2 class="h2">Some Project Works</h2>
+            <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+                <img src="./assets/images/cake.jpg" alt="Cake Website" />
+                <img src="./assets/images/Calc.jpg" alt="Calculator" />
+                <img src="./assets/images/insight.jpg" alt="Blog Website" />
+                <img src="./assets/images/portfolio.jpg" alt="Self Page" />
+            </div>
+
+        </section>
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2 class="h2">Skills</h2>
+            <div class="skills-container">
+                <div class="skills-item">
+                    <p class="p bar1"><span>HTML</span><span class="span2">90%</span></p>
+                    <p class="p bar2"><span>CSS</span><span class="span2">80%</span></p>
+                    <p class="p bar3"><span>JAVASCRIPT</span><span class="span2">70%</span></p>
+                    <p class="p bar4"><span>NODE.JS</span><span class="span2">50%</span></p>
+                    <p class="p bar5"><span>EXPRESS.JS</span><span class="span2">70%</span></p>
+                    <p class="p bar6"><span>MONGODB</span><span class="span2">50%</span></p>
+                </div>
+                <div class="skills-item"></div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2 class="h2">Let's Introduce About My Self</h2>
+            <img src="./assets/images/renu.jpg">
+            <h1 class="h1">renu bakshi</h1>
+            <div id="social-links">
+                <a href="https://www.linkedin.com/in/renu-bakshi" target="_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/Renubakshi" target="_blank"><i
+                        class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa fa-envelope"
+                        aria-hidden="true"></i></a>
+            </div>
+            <h3 class="h3" class="h3">Web developer || Pseudo fullstack developer || article writer</h3>
+            <p class="p">Hello my name is <b>Renu Bakshi</b>. I am a focused Web developer and ex-NIC intern. MCA Holder
+                with having a ton of intrest in Web Development. I have made 2 projects
+                with the help of html,css and javascript and apart from that I am a part time content writer. </p>
+        </section>
+    </main>
+    {{>footer}}
+</body>
+
+</html>

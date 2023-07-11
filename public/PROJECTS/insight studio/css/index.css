@@ -1,0 +1,193 @@
+/* SOME BASIC PROPERTIES */
+*{
+    box-sizing:border-box;
+    font-family: 'Baloo Bhai',georgia;
+}
+
+/* CSS RESETS */
+body{
+    margin:0px;
+}
+
+/* CSS VARIABLES */
+:root{
+    --primary-color:/*rgb(247, 184, 205);*/#e5bad8;
+    --secondary-color:aqua; 
+    --white:white;
+    --black:black;
+    --h1-size:30px;
+    --h3-size:1.17em;
+    --p-size:17px;
+}
+
+/*STYLE THE TOP NAVIGATION AS FLEX CONTAINER */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:var(--primary-color);
+    position:sticky;
+    top:0px;
+}
+/*NAV BAR: LOGO*/
+.logo .img{
+    height:95px;
+    width:170px;
+}
+/* NAV BAR:MENUS */
+nav .menus a{
+    text-decoration: none;
+    color:var(--black);
+    padding: 7px 15px;
+    text-transform:uppercase;
+    text-shadow: -1px 2px 5px var(--white);
+}
+nav .menus a:hover{
+    background-color:var(--white);
+    color:blue;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* STYLE THE HOME SECTION 
+#home{
+    position: relative;
+    top:0px;
+    left:0px;
+    height: 400px;
+}
+#home::before{
+    content:"";
+    background: var(--secondary-color) url("../images/MALAI.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+}*/
+
+/* STYLE THE YOGA SECTION AS GRID CONTAINER */
+#yoga{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(475px,auto);
+    grid-gap:15px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    text-align: center;
+}
+/* YOGA SECTION: IMAGE PART */
+.yoga-box1{
+    background-color: red;
+}
+#yoga .img{
+    height: 320px;
+    width: 363px;
+    position: absolute;
+    border:3px solid black;
+}
+.img1{
+    background-color: var(--secondary-color);
+    top:0px;
+    left:0px;
+    z-index: 1;  
+}
+.img2 {
+    top: 56px;
+    left: 68px;
+    z-index: 2; 
+}
+.img3 {
+    top: 106px;
+    left: 124px;
+    z-index: 1;
+}
+/* YOGA SECTION: TEXT PART */
+#yoga .yoga-box2{
+    border:3px solid black;  
+}
+.yoga-box2 .text{
+    background-color: yellow;
+    padding: 100px 41px;
+    text-align: center;
+}
+
+/* STYLING THE FOOTER*/ 
+footer{
+    display: flex;
+    background-color:var(--primary-color);
+    
+}
+footer .foot-text{
+    margin-left: 34px;
+    margin-right: 111px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+
+/* UTILITY CLASSES */
+.btn{
+    background-color: var(--secondary-color);
+    border-width: 1.5px;
+    box-shadow: 1px 0px 4px var(--black);
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+.h1-primary{
+    font-size: var(--h1-size);
+}
+.h3-primary{
+    font-size:var(--h3-size);
+    font-weight: bold;
+}
+.p-primary{
+    font-size: var(--p-size);
+    word-spacing: 5px;
+    line-height: 30px;
+}
+/* DESKTOP AND LAPTOP */
+@media screen and (max-width:990px){
+
+/*TOP NAVIGATION  */
+/* nav{
+    flex-direction:column;
+}
+#yoga{
+    grid-template-columns: 1fr;
+} */
+/* #yoga .yoga-box1{
+    position: relative;
+    left:250px;
+} */
+#yoga .img {
+    height: 260px;
+    width: 270px;
+    margin-top: 50px;
+}
+
+}
+/* TABLET */
+@media screen and (max-width:800px){
+     #yoga{
+    grid-template-columns: 1fr;
+    }
+    #yoga .img {
+        height: 316px;
+        width: 314px;
+        margin-left: 140px;
+    } 
+}
+/* LANDSCAPE MOBILES */
+@media screen and (max-width:600px){}
+/* PORTRAIT MOBILES */
+@media screen and (max-width:480px){}
