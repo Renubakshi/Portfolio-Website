@@ -3,7 +3,7 @@ const hbs = require("hbs");
 const ContactForm = require("./db")
 const express = require('express');
 const app = express();
-const port = 8000;
+const port = const port = process.env.PORT || 8000;
 // PATH SETUP
 const publicPath = path.join(__dirname,"../public") 
 const viewsPath = path.join(__dirname,"../templates/views")
