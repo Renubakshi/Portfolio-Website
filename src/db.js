@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
-
+const databaseUrl = "mongodb://127.0.0.1:27017"
 // CONNECTION AND CREATION OF DATABASE
-mongoose.connect("mongodb://127.0.0.1:27017/PortfolioDB")
+mongoose.connect(databaseUrl+"/PortfolioDB")
 .then(()=>console.log("Connection Succesful"))
 .catch(err=> console.log(`Connection Failed....${err}`))
 
