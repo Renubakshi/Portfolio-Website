@@ -1,0 +1,252 @@
+/* BASIC PROPERTIES */
+*{
+    box-sizing:border-box;
+    text-align: center; 
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0rem;
+    padding: 0rem;
+    scroll-behavior:smooth;
+ }
+ html{
+     font-size:62.5%;
+ }
+ /* CSS CUSTOM VARIABLES */
+ :root{
+     --primary:#d96c6c;
+     --secondary:#26004c;
+     --dark:black;
+     --light:white;
+ }
+ 
+ /* NAVIGATION AS FLEX CONTAINER  */
+ #navigation{
+     display: flex;
+     justify-content: space-between;
+     align-items:center;  
+     color: var(--light);
+     font-size: 2.2rem;
+     position:fixed;
+     top: 0rem;
+     right: 0rem;
+     left: 0rem;
+     z-index: 9999;
+ }
+ /* NAV-BAR: BLACK STRIP */
+ #navigation::before{
+     content:"";
+     background-color: var(--dark);
+     height:100%;
+     width: 100%;
+     position: absolute;
+     top:0rem;
+     left: 0rem;
+     z-index:-1;
+     opacity: .7;
+ }
+ 
+ /* NAV-BAR:LOGO */
+ .logo{
+     width:10rem; 
+     margin:0rem 1rem;
+ }
+ .logo img{
+     display: block;
+     margin: auto;
+     height: 100%;
+     width: 85%;
+     clip-path:circle();
+ }
+ .logo p{
+     display:inline;
+ }
+ 
+ /* NAV-BAR : MENUS */
+ .menus a{
+     text-decoration:none;
+     color:var(--light);
+     padding: .5rem 2rem;
+ }
+ .menus a:hover{
+     background-color:white;
+     color:var(--dark);
+     border-radius:3rem;
+     cursor:pointer; 
+ }
+ 
+ 
+ /* HOME SECTION AS FLEX CONTAINER */
+ #home{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     top: 0rem;
+     left: 0rem;
+ }
+ #home .home-text{
+     flex-basis: 50rem;
+     margin-top: 14rem;
+ }
+ 
+ /* HOME:BACKGROUND */
+ #home::before{
+     content:"";
+     background:url("../img/home.jpg") no-repeat center center/cover;
+     height: 100%;
+     width: 100%;
+     position:absolute;
+     top: 0rem;
+     left: 0rem;
+     z-index: -1;
+     opacity: .8;
+ }
+ 
+ 
+ /* SERVICE SECTION AS FLEX CONTAINER*/
+ .services-container{
+     display:flex;
+     flex-direction:row;
+     margin: 0rem 3rem;
+ }
+ 
+ /* SERVICE - FLEX ITEMS */
+ .services-items{
+     border: .2rem solid var(--secondary);
+     padding: 3.4rem;
+     margin:1.8rem .6rem;
+     background-color: rgb(219 129 129 / 18%);
+     border-radius: 2.8rem; 
+ }
+ .services-items img{
+     height: 10rem;
+ }
+ 
+ /* CLIENT SECTION */
+ #clients{
+     background:var(--primary) url("../img/header.jpg") no-repeat left;
+     background-size: cover;
+ }
+ /* CLIENT SECTION AS FLEX CONTAINER */
+ .clients-container{
+     display: flex;
+     flex-direction:row;
+     justify-content:space-evenly;
+ }
+ /* CLIENT - FLEX ITEMS */
+ .clients-items img{
+     height:10rem;
+     padding: 1rem;
+ }
+ 
+ /* CONTACT SECTION */
+ #contact{
+     background:var(--primary) url("../img/header.jpg") repeat center;
+     background-size: cover;  
+ }
+ /* CONTACT FORM AS FLEX CONTAINER */
+ .contact-container{
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     padding: 0rem 20rem;
+ }
+ /* CONTACT:BUTTONS */
+ .contact-container 
+ input[type ="text"],
+ input[type ="email"],
+ input[type ="number"],
+ textarea {
+     width: 100%;
+     border:.3rem solid var(--dark);
+     border-radius: .8rem;
+     color:var(--dark);
+     text-align: left;
+     padding: 1rem 2rem;
+ }
+ .contact-container input[type="submit"]{
+     width:100%;
+ }
+ .contact-container p{
+     width: 100%;
+     color:var(--dark);
+     text-align: left;
+ }
+ 
+ /* FOOTER */
+ footer{
+     background-color: var(--dark);
+     color:var(--light);
+     padding: 2rem;
+ }
+ /* UTILITY CLASSES */
+ 
+ .h1{
+     font-size: 2.8rem;
+     margin: 0rem;
+ 
+ }
+ .h2{
+     font-size: 2.2rem;
+ }
+ .p{
+     font-size: 1.8rem;
+     margin: .5rem ;
+ }
+ .btn{
+     padding: 1.5rem;
+     background-color: var(--primary);
+     border-radius: .9rem;
+     font-size: 1.5rem;
+     box-shadow: 0rem 0rem .5rem var(--dark);
+     font-weight: 550;
+     text-shadow: 0rem 0rem .5rem var(--light);
+     cursor:pointer;
+     margin: 1rem;
+ }
+ 
+ /* MEDIA QUERIES */
+ 
+ /* DESKTOP AND LAPTOP */
+ @media screen and (max-width:990px){
+ 
+ }
+ /* TABLETS */
+ @media screen and (max-width:800px){
+     html{
+         font-size: 57%;
+     }
+     #navigation{
+         flex-direction: column;
+     }
+     .logo img{
+         height: 50%;
+         width: 67%;
+     }
+     #navigation .menus {
+         margin: 1rem 0rem;      
+     }
+ }
+ /* LANDSCAPE MOBILES */
+ @media screen and (max-width:600px){
+     html{
+         font-size: 40%;
+     }
+     .clients-container{
+         flex-wrap: wrap;
+     }
+     
+ }
+ /* PORTRAIT MOBILES */
+ @media  screen and (max-width:480px) {
+     html{
+         font-size: 30%;
+     }
+     .services-container{
+         flex-direction: column;
+     }
+     .contact-container{
+         padding: 0rem 3rem;
+     }
+ }
+ 
