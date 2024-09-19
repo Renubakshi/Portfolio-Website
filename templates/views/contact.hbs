@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headLinks}}
+    <title>Contact us</title>
+</head>
+<body>
+    {{>header}}
+     <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div>
+                <h2 class="h2">drop your message here</h2>
+            </div>
+
+            <div>
+                <form class="contact-form" method="post" action="/contact">
+                    <p class="p">Name:*</p>
+                    <input class="p" type="text" name="name" placeholder="Enter name here" required>
+                    <p class="p">Email:*</p>
+                    <input class="p" type="email" name="email" placeholder="Enter email here" required>
+                    <p class="p">Message:*</p>
+                    <textarea class="p" required name="message" placeholder ="Enter message here" cols="12" rows="6" > </textarea>
+                    <button class="btn">Send</button>
+                </form>
+                <p class="p err">{{data}}</p>
+            </div>
+        </section>
+        {{>footer}}
+</body>
+</html>
